@@ -9,8 +9,9 @@
 </head>
 <body>
     <h1>SGLanchonete 1.0</h1>
-    <a href ="#" class ="botao1">Cadastro de Produtos</a>
+    <a href ="tela-produtos.php" class ="botao1">Cadastro de Produtos</a>
     <a href = "#" class ="botao2">Cadastro de pedidos </a>
+    
     
 
 </body>
