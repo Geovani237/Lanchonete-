@@ -1,14 +1,15 @@
 <?php
-$conexao = myslqi_connect("localhost", "root", "", "lanchonete");
+$conexao = mysqli_connect("localhost", "root", "", "lanchonete");
 
 $produto = $_POST['produto'];
 $preco = $_POST['preco'];
 $ingredientes = $_POST['ingredientes'];
-echo "{$produtos} - {$preco} - {$ingredientes}";
+echo "{$produto} - {$preco} - {$ingredientes}";
+
+ $sql_inserir = "insert into tbprodutos(produto,preco, ingredientes) value ('{$produto}',{$preco},'{$ingredientes}')";
 
 
+mysqli_query($conexao,$sql_inserir);
 
-
-myslqi_close($conexao);
-
+mysqli_close($conexao);
 ?>
