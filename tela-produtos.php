@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <h1 id = "titulo">TELA DE PRODUTOS</h1>
 <form action="cadastra-produto.php" method="post">
     Produto:
     <input name = "produto" id = "produto">
